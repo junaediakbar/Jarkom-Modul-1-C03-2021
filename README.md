@@ -27,7 +27,8 @@
 ## 6
 
 > Cari username dan password ketika melakukan login ke FTP Server!
-> Menjalankan filter:
+
+Menjalankan filter:
 
 ```
  ftp.request.command == USER || ftp.request.command == PASS
@@ -54,7 +55,7 @@ Selanjutnya _Follow_ -> _TCP Stream_ dan download sebagai RAW
 <img src="./img/soal7-2.jpg" width="700" height="400">
 <br>
 Berikut adalah file yang diperoleh:
-<img src="./img/soal7-3jpg" width="700" height="400">
+<img src="./img/soal7-3.jpg" width="700" height="400">
 <br>
 
 ## 8
@@ -82,6 +83,7 @@ ftp-data.command contains "secret.zip"
 
 <img src="./img/soal9.jpg" width="700" height="400">
 Diperoleh file `wanted.pdf` di dalam `secret.zip` namun masih memerlukan password untuk membukanya.
+
 ## 10
 
 > Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!

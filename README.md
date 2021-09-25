@@ -13,25 +13,73 @@ http.host == “ichimarumaru.tech”
 ```
 Maka akan diperoleh hasil berikut
 <br>
-<img src="./img/soal6-1.jpg" width="700" height="400">
+<img src="./img/1.jpg" width="700" height="400">
 <br>
 
 
 ## 2
 
 > Temukan paket dari web-web yang menggunakan basic authentication method!
+Untuk Menjalankan : 
+```
+http.authbasic
+```
+Maka akan diperoleh hasil berikut
+<br>
+<img src="./img/2.jpg" width="700" height="400">
+<br>
 
 ## 3
 
 > Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
+Gunakan perintah untuk mendapatkan kode dan pass
+```
+ http.host contains basic.ichimarumaru.tech
+```
+Maka akan diperoleh hasil berikut
+<br>
+<img src="./img/3.jpg" width="700" height="400">
+<br>
+Kode dan User name terletak pada bagian credentials .
+<br>
+Kemudian Berikut hasil dari web pencarian dengan menggunakan kode damn password yang di dapat 
+<br>
+<img src="./img/31.jpg" width="700" height="400">
+<br>
 
 ## 4
 
 > Temukan paket mysql yang mengandung perintah query select!
+Untuk Menjalankan :
+Digunakan 'SELECT' dengan  menggunakan huruf besar dan kecil
+```
+mysql.query contains "select"
+```
+```
+mysql.query contains "SELECT"
+```
+Maka akan diperoleh hasil berikut
+<br>
+<img src="./img/4.jpg" width="700" height="400">
+<img src="./img/41.jpg" width="700" height="400">
+<br>
 
 ## 5
 
 > Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
+Untuk Menjalankan : 
+```
+http.authbasic
+```
+Maka akan diperoleh hasil berikut
+<br>
+<img src="./img/5.jpg" width="700" height="400">
+<br>
+Kemudian Berikut hasil dari web pencarian dengan menggunakan kode damn password yang di dapat 
+<br>
+<img src="./img/51.jpg" width="700" height="400">
+<br>
+
 
 ## 6
 

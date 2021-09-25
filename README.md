@@ -7,6 +7,15 @@
 ## 1
 
 > Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
+Untuk Menjalankan : 
+```
+http.host == “ichimarumaru.tech”
+```
+Maka akan diperoleh hasil berikut
+<br>
+<img src="./img/soal6-1.jpg" width="700" height="400">
+<br>
+
 
 ## 2
 

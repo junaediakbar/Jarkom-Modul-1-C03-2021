@@ -97,6 +97,7 @@ ftp-data.command contains "history.txt"
 Untuk mencari file `history.txt`
 <br>
 Diperoleh:
+<br>
 <img src="./img/soal10-1.jpg" width="700" height="400">
 Selanjutnya follow TCP Stream, diperoleh
 <img src="./img/soal10-2.jpg" width="700" height="400">

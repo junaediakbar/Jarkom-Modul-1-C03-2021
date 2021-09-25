@@ -7,23 +7,26 @@
 ## 1
 
 > Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
-Untuk Menjalankan : 
+> Untuk Menjalankan :
+
 ```
 http.host == “ichimarumaru.tech”
 ```
+
 Maka akan diperoleh hasil berikut
 <br>
 <img src="./img/1.jpg" width="700" height="400">
 <br>
 
-
 ## 2
 
 > Temukan paket dari web-web yang menggunakan basic authentication method!
-Untuk Menjalankan : 
+> Untuk Menjalankan :
+
 ```
 http.authbasic
 ```
+
 Maka akan diperoleh hasil berikut
 <br>
 <img src="./img/2.jpg" width="700" height="400">
@@ -32,17 +35,19 @@ Maka akan diperoleh hasil berikut
 ## 3
 
 > Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
-Gunakan perintah untuk mendapatkan kode dan pass
+> Gunakan perintah untuk mendapatkan kode dan pass
+
 ```
  http.host contains basic.ichimarumaru.tech
 ```
+
 Maka akan diperoleh hasil berikut
 <br>
 <img src="./img/3.jpg" width="700" height="400">
 <br>
 Kode dan User name terletak pada bagian credentials .
 <br>
-Kemudian Berikut hasil dari web pencarian dengan menggunakan kode damn password yang di dapat 
+Kemudian Berikut hasil dari web pencarian dengan menggunakan kode damn password yang di dapat
 <br>
 <img src="./img/31.jpg" width="700" height="400">
 <br>
@@ -50,14 +55,17 @@ Kemudian Berikut hasil dari web pencarian dengan menggunakan kode damn password 
 ## 4
 
 > Temukan paket mysql yang mengandung perintah query select!
-Untuk Menjalankan :
-Digunakan 'SELECT' dengan  menggunakan huruf besar dan kecil
+> Untuk Menjalankan :
+> Digunakan 'SELECT' dengan menggunakan huruf besar dan kecil
+
 ```
 mysql.query contains "select"
 ```
+
 ```
 mysql.query contains "SELECT"
 ```
+
 Maka akan diperoleh hasil berikut
 <br>
 <img src="./img/4.jpg" width="700" height="400">
@@ -67,19 +75,20 @@ Maka akan diperoleh hasil berikut
 ## 5
 
 > Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
-Untuk Menjalankan : 
+> Untuk Menjalankan :
+
 ```
 http.authbasic
 ```
+
 Maka akan diperoleh hasil berikut
 <br>
 <img src="./img/5.jpg" width="700" height="400">
 <br>
-Kemudian Berikut hasil dari web pencarian dengan menggunakan kode damn password yang di dapat 
+Kemudian Berikut hasil dari web pencarian dengan menggunakan kode damn password yang di dapat
 <br>
 <img src="./img/51.jpg" width="700" height="400">
 <br>
-
 
 ## 6
 
@@ -129,6 +138,7 @@ Menjalankan filter:
 ```
 ftp-data.command contains RETR
 ```
+
 <br>
 <img src="./img/soal8.jpg" width="700" height="400">
 
@@ -141,6 +151,7 @@ Menjalankan filter:
 ```
 ftp-data.command contains "secret.zip"
 ```
+
 <br>
 <img src="./img/soal9.jpg" width="700" height="400">
 <br>
@@ -184,27 +195,79 @@ Selanjutnya buka file `wanted.pdf` pada `secret.zip`
 <br>
 <img src="./img/soal10-4.jpg" width="700" height="400">
 <br>
+
 ## 11
 
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
+
+Menjalankan filter:
+
+```text
+src port 80
+```
+
+Setelah itu untuk mendapatkan hasil di wireshark perlu dilakukan pembukaan website yang menggunakan http (port 80) seperti monta.if.its.ac.id.
+
+![Filter src port 80](https://cdn.discordapp.com/attachments/769183322147389460/891289545759420436/unknown.png)
 
 ## 12
 
 > Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
+Menjalankan filter:
+
+```text
+port 21
+```
+
+Setelah itu untuk mendapatkan hasil di wireshark perlu dilakukan curl ke web dengan protokol FTP (port 21) seperti [ftp://ftp.unicode.org/public/unidata/unicodedata.txt](ftp://ftp.unicode.org/public/unidata/unicodedata.txt).
+
+![Filter port 21](https://cdn.discordapp.com/attachments/769183322147389460/891292989387853824/unknown.png)
+
 ## 13
 
 > Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+
+Menjalankan filter:
+
+```text
+dst port 443
+```
+
+Kita tidak perlu membuka apapun karena banyak _background task_ sistem yang melakukan komunikasi ke port 443.
+
+![Filter dst port 443](https://cdn.discordapp.com/attachments/769183322147389460/891293510848897054/unknown.png)
 
 ## 14
 
 > Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 
+Menjalankan filter:
+
+```text
+dst host kemenag.go.id
+```
+
+Setelah membuka kemenag.go.id didapatkan hasil sebagai berikut.
+
+![Filter dst host kemenag.go.id](https://cdn.discordapp.com/attachments/769183322147389460/891293953561886761/unknown.png)
+
 ## 15
 
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 
+Menjalankan filter: (IP saya 192.168.1.2)
+
+```text
+src host 192.168.1.2
+```
+
+Kita tidak perlu membuka apapun karena banyak _background task_ sistem yang melakukan komunikasi ke server luar.
+
+![Filter src host 192.168.1.2](https://cdn.discordapp.com/attachments/769183322147389460/891294662621544468/unknown.png)
+
 <hr>
 
 ## Kendala
-Jaringan internet saat hari pengerjaan modul kurang mendukung sehingga kesulitan dalam mendownload file .pcap 
+
+Jaringan internet saat hari pengerjaan modul kurang mendukung sehingga kesulitan dalam mendownload file .pcap

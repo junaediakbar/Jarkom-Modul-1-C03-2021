@@ -203,3 +203,8 @@ Selanjutnya buka file `wanted.pdf` pada `secret.zip`
 ## 15
 
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
+<hr>
+
+## Kendala
+Jaringan internet saat hari pengerjaan modul kurang mendukung sehingga kesulitan dalam mendownload file .pcap 

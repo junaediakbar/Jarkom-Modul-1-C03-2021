@@ -35,6 +35,7 @@ Menjalankan filter:
 ```
 
 Maka akan diperoleh hasil berikut
+<br>
 <img src="./img/soal6-1.jpg" width="700" height="400">
 <br>
 
@@ -49,12 +50,15 @@ frame contains “Real.pdf”
 ```
 
 Sehingga diperoleh hasil berikut:
+<br>
 <img src="./img/soal7-1.jpg" width="700" height="400">
 <br>
 Selanjutnya _Follow_ -> _TCP Stream_ dan download sebagai RAW
+<br>
 <img src="./img/soal7-2.jpg" width="700" height="400">
 <br>
 Berikut adalah file yang diperoleh:
+<br>
 <img src="./img/soal7-3.jpg" width="700" height="400">
 <br>
 
@@ -68,7 +72,7 @@ Menjalankan filter:
 ```
 ftp-data.command contains RETR
 ```
-
+<br>
 <img src="./img/soal8.jpg" width="700" height="400">
 
 ## 9
@@ -80,8 +84,9 @@ Menjalankan filter:
 ```
 ftp-data.command contains "secret.zip"
 ```
-
+<br>
 <img src="./img/soal9.jpg" width="700" height="400">
+<br>
 Diperoleh file `wanted.pdf` di dalam `secret.zip` namun masih memerlukan password untuk membukanya.
 
 ## 10
@@ -99,8 +104,11 @@ Untuk mencari file `history.txt`
 Diperoleh:
 <br>
 <img src="./img/soal10-1.jpg" width="700" height="400">
+<br>
 Selanjutnya follow TCP Stream, diperoleh
+<br>
 <img src="./img/soal10-2.jpg" width="700" height="400">
+<br>
 ditemukan `key = "$(tail -1 bukanapaapa.txt)`
 <br>
 sehingga perlu mencari file **bukanapaapa.txt**, dengan filter:
@@ -110,12 +118,15 @@ ftp-data.command contains "bukanapaapa.txt"
 ```
 
 Sehingga diperoleh:
+<br>
 <img src="./img/soal10-3.jpg" width="700" height="400">
+<br>
 diperoleh password : `d1b1langbukanapaapajugagapercaya`
 <br>
 Selanjutnya buka file `wanted.pdf` pada `secret.zip`
+<br>
 <img src="./img/soal10-4.jpg" width="700" height="400">
-
+<br>
 ## 11
 
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
